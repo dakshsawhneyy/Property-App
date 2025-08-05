@@ -33,7 +33,7 @@ const PropertyList = () => {
       {filteredProducts == 0 && <p>No property</p> }
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 px-3'>
         {properties ? filteredProducts.map((item) => (
-          <PropertyCard key={item.id} title={item.title} location={item.location} price={item.price} desc={item.description} image={item.image} />
+          <PropertyCard key={item.id} id={item.id} title={item.title} location={item.location} price={item.price} desc={item.description} image={item.image} />
         )) : (
           <p className='text-center'>No properties available</p>
         )}
