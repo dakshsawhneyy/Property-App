@@ -42,7 +42,7 @@ const [property, setProperty] = useState({
     });
   }
 
-  console.log(property)
+  // console.log(property)
 
   return (
     <form onSubmit={handleSubmit}>
