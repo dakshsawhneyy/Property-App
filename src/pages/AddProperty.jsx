@@ -18,8 +18,14 @@ const [property, setProperty] = useState({
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    localStorage.setItem(`property-${property.id}`, JSON.stringify(property));
-    console.log(`Property with ID ${property.id} added to localStorage`);
+    
+    // Need to use an array, if not then values will overwrite each other
+    //  fetch properties array from local storage, if not then create one
+    const existing = JSON.parse(localStorage.getItem('properties')) || [];
+    const updated = [...existing, property];
+
+    // Again Set to local storage
+    localStorage.setItem('properties', JSON.stringify(updated))
   }
 
   console.log(property)
