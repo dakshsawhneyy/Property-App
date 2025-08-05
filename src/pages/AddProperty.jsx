@@ -26,6 +26,15 @@ const [property, setProperty] = useState({
 
     // Again Set to local storage
     localStorage.setItem('properties', JSON.stringify(updated))
+
+    setProperty({
+      id: Math.random().toString(6).substr(2,5),
+      title: '',
+      location: '',
+      price: '',
+      description: '',
+      image: ''
+    });
   }
 
   console.log(property)
