@@ -53,7 +53,7 @@ const [property, setProperty] = useState({
         <input placeholder='Location' type='text' id='location' onChange={(e) => setProperty({...property, location:e.target.value})} className='py-2 px-1 w-[300px] border' required />
         <input placeholder='Price' type='number' id='price' onChange={(e) => setProperty({...property, price:e.target.value})} className='py-2 px-1 w-[300px] border' required />
         <input placeholder='Description' onChange={(e) => setProperty({...property, description:e.target.value})} type='text' id='desc' className='py-2 px-1 w-[300px] border' required />
-        <input placeholder='Image'  type='text' id='image' onChange={(e) => setProperty({...property, image:e.target.value})} className='py-2 px-1 w-[300px] border' required />
+        <input placeholder='Image URL'  type='text' id='image' onChange={(e) => setProperty({...property, image:e.target.value})} className='py-2 px-1 w-[300px] border' required />
         <button type="submit" className="text-white bg-black py-2 px-2 rounded">Submit</button>
       </div>
     </form>
