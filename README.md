@@ -1,6 +1,8 @@
-<img width="1715" height="808" alt="image" src="https://github.com/user-attachments/assets/1897c612-20f6-4353-ace9-f48d66e5c0ff" /># Property Listing App
+# Property Listing App
 
 A fully functional React-based application to **list, add, filter, and view** real estate properties using `localStorage`.
+
+<img width="1857" height="985" alt="home" src="https://github.com/user-attachments/assets/40d080f1-d20a-4d57-9517-5490fb8d66ac" />
 
 ## Features
 
@@ -32,8 +34,6 @@ src/
 3. Run `npm run dev` or `npm start`
 
 ## Screenshots
-<img width="1857" height="985" alt="home" src="https://github.com/user-attachments/assets/40d080f1-d20a-4d57-9517-5490fb8d66ac" />
+
 <img width="1700" height="960" alt="add_property" src="https://github.com/user-attachments/assets/a7a7fb7d-c613-4b76-9c69-167b20d67de7" />
 <img width="1792" height="893" alt="property_details" src="https://github.com/user-attachments/assets/a9e28e46-485b-4463-aca8-2c1127ab8833" />
-
-
