@@ -6,13 +6,16 @@ COPY package*.json ./
 RUN npm ci
 
 COPY . .
+RUN npm run build
 
-FROM node:21-alpine
+# serve with nginx
+FROM nginx:alpine
 
-WORKDIR /app
+# remote default nginx files
+RUN rm -rf /usr/share/nginx/html/*
 
-COPY --from=builder /app /app
+COPY --from=builder /app/dist /usr/share/nginx/html
 
-EXPOSE 5173
+EXPOSE 80
 
-CMD ["npm","run","dev"]
+CMD ["nginx","-g","daemon off;"]
